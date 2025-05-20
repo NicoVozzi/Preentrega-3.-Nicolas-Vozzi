@@ -1,0 +1,9 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+/*estilos de tablet*/
+@media screen and (max-width: 900px){
+    .texto-uno{
+        font-size: larger;
+    }
+}

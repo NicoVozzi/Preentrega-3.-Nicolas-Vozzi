@@ -1,0 +1,165 @@
+//variables
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+
+/*estilos header*/
+
+/*navbar*/
+.menu-uno:hover{
+    font-weight: bolder;
+}
+
+.menu-dos:hover{
+font-weight: bolder;
+}
+
+.menu-tres:hover{
+font-weight: bolder;
+}
+
+.menu-cuatro:hover{
+font-weight: bolder;
+}
+
+.contenedor-video{
+    position: relative;
+}
+
+/*video*/
+
+.background-video{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+object-fit: cover;
+z-index: -1;
+filter: blur(1px);
+filter: grayscale(30%);
+height: 100%;
+}
+
+/*textos*/
+h5 {
+    color: $color-textoprincipal
+}
+
+.texto-uno{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 95%;
+}
+
+.texto-dos{
+font-size: 1rem;
+width: 95%;
+}
+
+.boton-uno{
+    background-color: $color-botonfondo;
+    color: $color-botonfuente;
+    width: 150px;
+    @include button
+    
+}
+
+.boton-uno:hover{
+background-color: white;
+color: #999672;
+font-style: italic;
+}
+
+.container-uno{
+    @include texto;
+    z-index: 1;
+}
+
+/*estilos de main*/
+
+img{
+    @include img
+}
+
+.titulo{
+    text-align: center;
+}
+
+.contenedor{
+    @include grid(grid, repeat(2, 1fr), 2 )
+}
+
+.cards{
+    @include flex
+}
+
+.card-info-p{
+    font-family: $fuente-card;
+    position: relative;
+    bottom: 120px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/*estilos de footer*/
+footer{
+    @include txtfooter
+}
+
+/*estilos de contacto.html*/
+section{
+      @include flex;
+    margin-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    height: 500px;
+    width: 500px;
+    background-color:  #AAAF6B;
+    padding: 3%;
+    border-radius: 20px;
+    border: solid black;
+    margin-bottom: 10%;
+    align-items: normal;   
+}
+
+//media query
+
+/*estilos mobile*/
+
+@media screen and (max-width: 390px) { 
+header{
+h5{
+width: 300px;
+}
+.texto-uno{
+font-size: 20px;
+width: 300px;
+}
+
+.texto-dos{
+font-size: 20px;
+width: 200px;
+}
+}
+
+main{
+.titulo{
+padding: 10px;
+}
+.contenedor{
+@include grid(grid, repeat(1, 1fr), none)
+}
+}
+footer{
+    margin-top: 65%;
+}
+section{ 
+    width: 90%;
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}

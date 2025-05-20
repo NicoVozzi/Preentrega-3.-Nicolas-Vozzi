@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Preentrega 3-SASS</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navegacion">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><span class="text-warning">Viaja</span>Hoy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destinos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item menu-uno" href="Pages/Rio.html">Rio</a></li>
+                      <li><a class="dropdown-item menu-dos" href="Pages/Newyork.html">New York</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item menu-tres" href="Pages/Austria.html">Austria</a></li>
+                      <li><a class="dropdown-item menu-cuatro" href="Pages/Venecia.html">Venecia</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class= "container-fluid contenedor-video">
+            <video class="background-video" src="img/3945877-hd_1920_1080_30fps.mp4" autoplay muted loop></video>
+            <div class="container-fluid container-uno row">
+              <div class="col-6">
+                <h5>¡Bienvenido a <span class="text-warning">Viaja</span>Hoy – Tu próximo viaje comienza aquí!</h5>
+                <p class="texto-uno">
+                  Estamos felices de acompañarte en la aventura de descubrir nuevos destinos, vivir experiencias inolvidables y crear recuerdos que durarán toda la vida.
+                  Ya sea que sueñes con playas paradisíacas, ciudades vibrantes o escapadas a la naturaleza, acá vas a encontrar inspiración, consejos y las mejores ofertas para hacer realidad ese viaje soñado.
+                  Explorá, planificá y dejate llevar... ¡El mundo te espera!
+                </p>
+                <p class="texto-dos">Para mas informacion no dude en contactarnos.</p>
+                <a href="./Pages/Contacto.html"><button class="boton-uno">Contactenos</button></a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+      <h2 class="titulo">Nuestros destinos</h2> 
+      <div class="contenedor">
+        <div class="cards">
+          <div class="card-info">
+            <a href="./Pages/Rio.html"><img src="img/rio.jpeg" alt=""></a>
+            <div class="card-info-p">
+            <p>Rio de Janeiro</p>
+            <p>$150.000</p>
+            <p>Desde Buenos Aires</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-info">
+            <a href="./Pages/Austria.html"><img src="img/austria.jpeg" alt=""></a>
+            <div class="card-info-p">
+              <p>Austria</p>
+              <p>$250.000</p>
+              <p>Desde Buenos Aires</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-info">
+            <a href="Pages/Newyork.html"><img src="img/new york.jpeg" alt=""></a>
+            <div class="card-info-p">
+              <p>New York</p>
+              <p>$300.000</p>
+              <p>Desde Buenos Aires</p>
+              </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-info">
+            <a href="Pages/Venecia.html"><img src="img/venecia.jpeg" alt=""></a>
+            <div class="card-info-p">
+            <p>Venecia</p>
+            <p>$500.000</p>
+            <p>Desde Buenos Aires</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        ©2025 Todos los derechos reservados a Nicolas Vozzi y asociados
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

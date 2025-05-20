@@ -1,0 +1,169 @@
+/* estilos de header */
+
+.navegacion{
+background-color: #AAAF6B;
+}
+
+.menu-uno:hover{
+font-weight: bolder;
+}
+    
+.menu-dos:hover{
+font-weight: bolder;
+}
+    
+.menu-tres:hover{
+font-weight: bolder;
+}
+    
+.menu-cuatro:hover{
+font-weight: bolder;
+}
+
+/* estilos de main */
+
+main{
+background-color: #AAAF6B;
+}
+
+
+h1{
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #FCBD4E;
+}
+
+.contenedor{
+display: flex;
+gap: 100px;
+}
+
+.parrafos{
+width: 50%;
+text-align: center;
+margin-top: 4%;
+margin-bottom: 4%;
+}
+
+
+.imagenes{
+display: grid;
+width: 50%;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: 2 ;
+grid-template-areas:"uno tres" 
+"dos tres";
+row-gap: 30px;
+gap: 30px;
+margin-top: 4%;
+margin-bottom: 4%;
+}
+    
+img{
+width: 400px;
+height: 600px;
+}
+
+.ciudad{
+grid-area: uno;
+border: solid black;
+border-radius: 20px;
+height: 300px;
+}
+    
+.palacio{
+grid-area: dos;
+border: solid black;
+border-radius: 20px;
+height: 300px;
+}
+    
+.restaurant{
+grid-area: tres;
+height: 600px;
+margin-top: 50px;
+border: solid black;
+border-radius: 20px;
+}
+
+footer{
+background-color: #999e61;
+color: black;
+font-weight: bolder;
+height: 70px;
+text-align: center;
+}
+
+button{
+border-radius: 20px;
+background-color: black;
+color: whitesmoke;
+}
+
+button:hover{
+background-color: whitesmoke;
+color: black;
+font-style: italic;
+}
+
+.lista{
+list-style: none;
+}
+
+.lista li{
+margin-top: 30px;
+}
+
+.titulo-paginas{
+color: #585e0b;
+font-size: 2.5rem;
+}
+
+/* media querys */
+
+/* celular */
+
+@media screen and (max-width: 390px){
+main{
+.contenedor{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.parrafos{
+text-align: center;
+justify-content: center;
+}
+.lista{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+text-align: center;
+padding: 10%;
+width: 100%;
+}
+.imagenes{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.imagenes img{
+width: 250px;
+height: 300px;
+}
+}
+}
+
+/* tablets */
+
+@media screen and (max-width: 800px){
+.imagenes{
+display: flex;
+flex-direction: column;
+}
+.imagenes .restaurant{
+height: 300px ;
+}
+}

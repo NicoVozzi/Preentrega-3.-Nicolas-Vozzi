@@ -1,0 +1,45 @@
+//mixin flex
+
+@mixin bolder{
+    font-weight: bolder;
+}
+
+@mixin img{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+@mixin button{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: #999672;
+    color: white;
+    font-weight: 600;
+}
+
+@mixin texto{
+    padding: 10%;
+    color: white;
+}
+
+@mixin grid($grid, $column, $row){
+    display: grid;
+    grid-template-columns: $column; 
+    grid-template-rows: $row;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin txtfooter{
+    background-color: rgb(182, 142, 142);
+    color: black;
+    height: 70px;
+    text-align: center;
+    font-weight: bolder;
+}
